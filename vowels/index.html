@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // let a = "sonu";
+        // // console.log(a)
+        // //  console.log(a[3]);
+        // //  console.log(a.length);
+        // // debugger
+        // let vowel = "";
+        // let normal="";
+        
+
+
+        // for (let index = 0; index <a.length; index++) {
+
+        //     if (a[index] == "a" || a[index] == "e" || a[index] == "i" || a[index] == "o" || a[index] == "u") {
+
+        //         vowel+= a[index];
+
+        //     }
+        //     else {
+        //         normal+=a[index];
+        //     }
+
+
+
+
+
+
+        // }
+        // let combine=vowel+normal
+        // console.log(combine);
+       
+
+
+
+        // //
+
+
+
+
+        function vowelsAndConsonants(s) {
+
+            let vowels = "";
+            let nonvowels = "";
+
+            for (let i = 0; i <= s.length - 1; i++) {
+                if (s[i] == "a" || s[i] == "e" || s[i] == "i" || s[i] == "o" || s[i] == "u") {
+                    vowels += s[i];
+                }
+                else {
+                    nonvowels += s[i];
+                }
+            }
+
+            for (let j = 0; j <= vowels.length - 1; j++) {
+                console.log(vowels[j]);
+            }
+            for (let k = 0; k <= nonvowels.length - 1; k++) {
+                console.log(nonvowels[k]);
+            }
+
+
+        }
+
+        vowelsAndConsonants("sonu");
+
+
+    </script>
+
+</body>
+
+</html>
