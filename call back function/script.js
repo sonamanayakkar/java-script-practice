@@ -1,52 +1,86 @@
 
-
-
-// normal function
-
-// function calculation(a,b){
-//     let sum =a+b;
-//    return sum;
-// }
-
-// console.log(calculation(10,20));
-
-
-// let calculation = function (a,b){
-//     let sum =a+b;
-//    return sum;
-// }
-
-// console.log(calculation(20,20));
-
-
-//arrow function
-
-// let calculation =(a,b)=>{let sum=a+b; return sum;}
-
-// console.log(calculation(5,2))
-
-
 //call-back function
 
-// function calculation(notify, a, b) {
-//     let sum = a + b;
-//    console.log(sum);
-
-//    setTimeout(() => {
-//         notify();
-//    }, 3000);
+//1--------------
+// let  name=(welcome)=>{
+//     console.log("hi sonu");
+//     welcome();
 
 // }
 
-// function message(){
-//     console.log("addition completed!");
+// let  greet=()=>{
+//     console.log("welcome to vs code");
+
 // }
 
-// calculation(message,5,3);
+// name(greet);
+
+//1--------------
+// let calculation = (a,b,addition) => {
+//     return addition(a,b);
+// }
 
 
-//call-back function example
 
-function shop() {
+// let add = (a,b) => {
+//       return a + b;
 
+// }
+
+// let sub = (a,b) => {
+//     return a - b;
+// }
+
+// let message = () => {
+//     console.log("calculation completed!");
+
+// }
+// // calculation(5,10,add,message);
+
+// console.log(calculation(10,20,add));
+
+
+
+//task -1
+
+// let sayHello=(callback)=>{
+//     console.log("hello");
+//     callback();
+
+// }
+
+// let greet=()=>{
+//     console.log("good morning!");
+
+// }
+
+// sayHello(greet)
+
+
+//task -2
+
+let calculation = (a,b,callback,callback2) => {
+    callback(a,b);
+    callback2(a,b);
 }
+let add = (a,b) => {
+    console.log(a+b);
+    
+}
+let multiply = (a,b) => {
+     console.log(a*b);
+}
+
+
+calculation(10,10,add,multiply)
+
+
+
+
+
+
+
+
+
+
+
